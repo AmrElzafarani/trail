@@ -1,0 +1,14 @@
+<div class="main-view">
+    <div *ngIf="!isCollapsed" class="sidenav">
+        <app-sidenav></app-sidenav>
+    </div>
+    <div class="content">
+        <div class="header">
+            <app-header (toggleSidebarForMe)="toggleSidebar()"></app-header>
+        </div>
+
+        <div class="body">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

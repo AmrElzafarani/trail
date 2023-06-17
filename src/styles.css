@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+/* Define Some Variables */
+:root {
+    /* Color Variables */
+    --main-color: #00447E;
+    --secondary-color: #e4e4e4;
+    --background-color: #f0f0f0;
+    --contrast-color: white;
+    --main-color-opacity-quarter: #00447e40;
+}
+
+a.focus {
+    border: 0;
+    text-decoration: underline;
+}
+
+/* Define Font */
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Start Buttons Styling */
+.btn-primary {
+    background-color: var(--main-color);
+    color: var(--contrast-color);
+    border: 0;
+}
+
+.btn-primary:hover {
+    background-color: var(--main-color);
+    color: var(--contrast-color);
+}
+
+/* End Buttons Styling */
+
+/* Start Controls Styling */
+.form-control:focus {
+    border-color: var(--main-color-opacity-quarter);
+    box-shadow: 0 0 0 0.1rem var(--main-color-opacity-quarter);
+}
+
+/* End Controls Styling */
+
+/* Start Checkbox Styling */
+
+
+.form-check-input:checked {
+    background-color: var(--main-color);
+    border-color: var(--main-color-opacity-quarter);
+    box-shadow: 0 0 0 0.1rem var(--main-color-opacity-quarter);
+}
+
+.form-check-input:focus {
+    border-color: var(--main-color-opacity-quarter);
+    box-shadow: 0 0 0 0.1rem var(--main-color-opacity-quarter);
+}
+
+/* End Checkbox Styling */

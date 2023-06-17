@@ -1,0 +1,71 @@
+.sidenav {
+    background-color: var(--contrast-color);
+}
+
+.client-logo {
+    padding: 1rem;
+    text-align: center;
+}
+
+hr {
+    margin: 0;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--main-color);
+}
+
+.client-logo img {
+    height: 6rem;
+}
+
+.navigation {
+    height: calc(100vh - 8rem);
+    overflow-y: scroll;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navigation::-webkit-scrollbar {
+    display: none;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    position: relative;
+    cursor: pointer;
+    color: #00447E;
+    padding: 0.75rem 0;
+    padding-left: 1rem
+}
+
+.navigation ul li i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.navigation ul li a {
+    padding-inline-start: 2.5rem;
+    color: inherit;
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    display: flex;
+}
+
+.navigation ul li.active {
+    color: #fff;
+}
+
+.active {
+    background-color: #00447E;
+}

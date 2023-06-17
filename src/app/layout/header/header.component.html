@@ -1,0 +1,48 @@
+<nav class="navbar">
+    <div class="right-side">
+        <div class="icons-group">
+            <!-- <div class="icon" (click)="toggleLanguage()">
+                <i class="fa fa-language"></i>
+              </div> -->
+            <div class="btn-group">
+                <div>
+                    <div class="icon dropdown nav-link dropdown-toggle" id="tasks" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-list-check"></i>
+                        <ul class="dropdown-menu" aria-labelledby="tasks">
+                            <li class="dropdown-item">Action</li>
+                            <li class="dropdown-item">Another action</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon dropdown nav-link dropdown-toggle" id="notification" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-bell"></i>
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <li class="dropdown-item">Notifiction</li>
+                            <li class="dropdown-item">Notifiction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="profile dropdown nav-link dropdown-toggle" id="profileDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="user-btn">
+                        <span class="welcome-string">{{'Hi'}},<span class="username">User Name</span></span>
+                        <img src="../../../assets/images/profile.jpg" alt="profile-image" class="user-image">
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                        <li class="dropdown-item">Profile</li>
+                        <li class="dropdown-item">Log out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="left-side">
+        <i class="fa-solid fa-bars menubar" (click)="toggleSidebar()"></i>
+    </div>
+</nav>

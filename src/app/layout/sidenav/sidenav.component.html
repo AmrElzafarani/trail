@@ -1,0 +1,15 @@
+<nav class="sidenav">
+    <div class="client-logo">
+      <img src="../../../assets/images/LOGO PNG-05.png" alt="logo">
+    </div>
+    <hr>
+    <div class="navigation">
+      <ul>
+        <li *ngFor="let item of items" routerLinkActive="active">
+          <i class={{item.icon}}></i>
+          <a [routerLink]="item.path">{{item.name}}</a>
+        </li>
+      </ul>
+  
+    </div>
+  </nav>

@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="form">
+        <div class="input">
+            <img src="../../../../assets/images/LOGO PNG-05.png" alt="logo" class="logo">
+            <h3>Sign in</h3>
+            <form [formGroup]="loginForm" (keydown.enter)="login()">
+                <div class="form-floating mb-3">
+                    <input formControlName="email" type="email" class="form-control" id="email" placeholder="E-mail">
+                    <label for="email">Email address</label>
+                </div>
+                <div class="form-floating password" (mouseenter)="showtogglePassword()" (mouseleave)="hidetogglePassword()">
+                    <input formControlName="password" type="{{showPassword ? 'text' : 'password'}}" class="form-control" id="password" placeholder="Password">
+                    <div class="show-hide-password" id="show-hide-password" (click)="togglePasswordVisibility()">
+                        <i *ngIf="showPassword" class="fa-solid fa-eye"></i>
+                        <i *ngIf="!showPassword" class="fa-solid fa-eye-slash"></i>
+                    </div>
+                    <label for="password">Password</label>
+                </div>
+            </form>
+            <div class="form-button">
+                <button type="submit" class="btn btn-primary" (click)="login()">Sign in</button>
+            </div>
+        </div>
+    </div>
+</div>
+<p class="footer">COPYRIGHTS RESERVED X-ERP &#169; 2023</p>
